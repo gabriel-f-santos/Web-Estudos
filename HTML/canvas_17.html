@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- tag rai e idioma -->
+
+<head>
+    <!-- cabeçalho -->
+    <script>
+        function desenha(){
+            var canvas=document.getElementById('canvas');
+            var ctx=canvas.getContext('2d');
+            ctx.fillRect(25,25,100,100);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso completo de HTML - CBF Cursos</title><!-- nome da pagina -->
+</head>
+
+<body><!-- Canvas é para bitmap-->
+    <canvas id="canvas" width="500px" height="500px">
+        Browser sem suport
+    </canvas>
+    <script>desenha();</script>
+
+</body>
+</html>
