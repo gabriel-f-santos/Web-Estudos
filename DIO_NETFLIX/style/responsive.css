@@ -1,0 +1,27 @@
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .descricao{
+        overflow: hidden;
+        position: relative;
+        line-height: 1.2em;
+        max-height: 0em; /* aqui vc controla a altura da caixa de texto */
+        text-align: justify;
+    }
+
+    .botao{
+        margin-top: 0px;
+        width: 130px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 100%;
+    }
+}
