@@ -1,0 +1,19 @@
+body{ 
+    background-image: url(img/tec.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-attachment: fixed;
+    background-position:center top;
+}
+header{
+    text-align: center;
+}
+#teste{
+    width: 600px;
+    border: 1px solid rgb(41, 3, 3);
+    margin: auto;
+}
+p{
+    border: 1px solid rgb(221, 25, 25);
+    text-align: center;
+}

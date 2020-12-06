@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Curso Completo de HTML - CFB Cursos - Aula 24</title>
+</head>
+<style>
+	input {
+		display: block;
+	}
+
+	#btns {
+		display: flex;
+	}
+
+	#bot {
+		display: block;
+	}
+</style>
+
+<body>
+	<form action="">
+		<label for="">Nome:</label>
+		<input class="bot" type="text"></form>
+	<div id="btns">
+		<input class="bot" type="submit" value="gravar">
+		<input class="bot" type="reset" value="limpar">
+		<input class="bot" type="button" value="nada">
+	</div>
+	</form>
+
+	<form name="senha" action="#">
+		<label for="">Senha</label>
+		<input type="password">
+		<input type="checkbox">Tipo 1
+		<input type="checkbox">Tipo 2
+		<input type="checkbox">Tipo 3
+		<label>Possui carro?</label>
+		<input type="radio" value="s" name="carro"> Sim
+		<input type="radio" value="n" name="carro"> Não <br>
+
+		<label for="">Hora</label>
+		<input type="time" min="09:00" max="18:00">
+
+		<label for="">Data</label>
+		<input type="date">
+
+		<label for="">Hora Data</label>
+		<input type="datetime-local" min="09:00" max="18:00">
+
+		<label for="">month</label>
+		<input type="month">
+
+		<label for="">Week</label>
+		<input type="week">
+
+		<label for="">Cor</label>
+		<input type="color">
+
+		<label for="">E-mail</label>
+		<input type="email">
+
+		<label for="">image</label>
+		<input type="image">
+		<!--substitui botão de envio-->
+
+		<label for="">Telefone</label>
+		<input type="tel" pattern="\([0-9]{2}\[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9XXXX-XXXX">
+		<!--substitui botão de envio-->
+
+		<label for="">Selecione o Arquivo</label>
+		<input type="file">
+		<!--substitui botão de envio-->
+
+
+		<select name="" id="">
+			<option value="">preto</option>
+			<option value="">branco</option>
+			<option value="">amarelo</option>
+			<option value="">verde</option>
+		</select> <br>
+
+	</form>
+
+	<form action="">
+		<label for="">datalist</label>
+		<input list="cores">
+		<datalist id="cores">
+			<option value="red">preto</option>
+			<option value="green">branco</option>
+		</datalist>
+	</form>
+
+	<fieldset>
+		<legend>Dados Fieldset</legend>
+		<label for="">Selecione o Arquivo</label>
+		<input type="file">
+		<!--substitui botão de envio-->
+	</fieldset>
+	<form action="">
+		<textarea name="" id="" cols="30" rows="10" maxlength="100"></textarea>
+	</form>
+</body>
+
+</html>
