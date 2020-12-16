@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ /*       try{
+            document.writi("CFB Cursos")
+        }catch(e){
+            document.write("ERRO")
+            console.log("MEnsagem de erro: " + e.message);
+        } */
+
+        var num;
+        try{
+            num=prompt("Digite um valor");
+            if(num>10){
+                throw new Error("Valor invalido");
+            }
+            document.write("valor " + num);
+        }catch(e){
+            document.write("ERRO: " + e.message);
+        }finally{
+            document.write("<br>Fim do tratamento")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

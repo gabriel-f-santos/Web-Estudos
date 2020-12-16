@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var cor = new Array();
+        //var carro=[];
+        // var cor = [];
+        cor.push("Preto");
+        cor.push("verde");
+        cor.push("Bege");
+        cor.push("Azul");
+        cor.push("Branco");
+        document.write(cor[0]);
+        for (var i = 1; i < cor.length; i++)
+        {   document.write("<br />");
+            document.write(cor[i]);
+        }
+        document.write("<br>");
+
+        var itens = ["Faca","corda", "Lanterna", "arame", "chave"]
+        var mochila = [];
+
+        for (let i = 0; i < itens.length; i++){            
+            mochila.push(itens[i]);
+        }
+
+        document.write("<br>");
+
+        mochila.splice(2,3); //remove 3 itens a partir da posição 2
+
+        for (let i = 0; i < mochila.length; i++){
+            document.write("<br />");
+            document.write(mochila[i]);
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("IndexOf('faca')" + " : ");
+
+        document.write(mochila.indexOf("Faca"));
+        document.write("<br>");
+
+
+        var carro = [];
+        carro.push("Gol");
+        carro.push("Golf");
+        carro.push("Corsa");
+        carro.push("Bmw");
+        carro.push("Ferrari");
+        carro.unshift("Busão");//adiciona no inicio
+        carro.pop();
+        carro.pop();//Remove ultimo
+        carro.shift();//remove primeiro
+
+
+        
+        for (let i = 0; i < carro.length; i++){
+            document.write("<br>" + carro[i] + "\n");
+        }
+        document.write("<br>");
+        posicao = carro.indexOf("Bmw");
+        if(posicao==-1){
+            document.write("Elemento na mochila");
+        }else{
+            document.write("Elemento não está na mochila");
+        }
+
+        var numeros = ["2","1","5","4","3","9","8","7","6"];
+        document.write("<br>");
+        document.write("<br>");
+
+        for (var j=0; j<numeros.length; j++) {
+            document.write( numeros[j] + "<br>")
+        }
+
+        document.write("numeros.sort()"+"<br>");
+        numeros.sort()
+        for (var j=0; j<numeros.length; j++) {
+            document.write( numeros[j] + "<br>")
+        }
+        document.write("numeros.reverse()"+"<br>");
+        numeros.reverse()
+        for (var j=0; j<numeros.length; j++) {
+            document.write( numeros[j] + "<br>")
+        }
+
+        document.write("uso de join, adiciona elementos em array por virgula" +"<br>")
+        var num;
+        num=numeros.join();
+        document.write("<br> " + " num= numeros.join()");
+        document.write("<br>"+num);
+
+
+        document.write("<br>"+"Concat");
+        var var1 = ["Hello"];
+        var var2 = ["World"]; 
+        var concat = [];
+        concat = var1.concat(var2);
+        document.write("<br>" + concat)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
