@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt">Luke, i'm your father Father</p>
+    <p id="txt2">happiness only real when shared</p>
+    <script>
+        var texto = document.getElementById('txt').innerHTML;
+    
+        var res = texto.match('father');
+        var res2 = texto.match(/father/ig); //i=sem case sensitive e g é todos matchs
+
+        document.write(res.length);
+        document.write("</br>");
+        document.write(res2.length);
+
+        var texto2 = document.getElementById('txt2').innerHTML;
+
+                //conta todos menos o e a
+        var resposta2 = texto2.match(/[^oa]/ig); //i=sem case sensitive e g é todos matchs
+        document.write("</br>" + resposta2 + " tamanho " + resposta2.length);
+
+         
+    </script>
+</body>
+</html>

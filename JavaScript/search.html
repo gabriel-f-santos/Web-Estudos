@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt">Luke, i'm your father Father</p>
+    <p id="txt2">happiness only real when shared</p>
+    <script>
+        var texto = document.getElementById('txt').innerHTML;
+        var texto2 = document.getElementById('txt2').innerHTML;
+        //var texto3 = document.getElementById('txt2').innerHTML;
+    
+        var res = texto.search(/father/i);
+        var res2 = texto.replace(/father/ig,"son");
+        var res3 = texto.charAt(2);
+        var res4 = texto.charCodeAt(3);
+
+        document.write("Posição do vetor em: " + res);
+        document.write("</br>" + res2);
+        document.write("</br>"+"Caracter na posição 2: " + res3+"</br> "+"Caracter na posição 3: " + res4+"</br> "+"Código em letra 3: " + String.fromCharCode(res4));
+        
+        document.write("</br>"+"usando concat: "+"</br>" + texto2.concat(" "+texto));
+
+    </script>
+</body>
+</html>
