@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto1">this is ilogical captain!</p>
+
+    <script>
+        var texto1=document.getElementById('texto1').innerHTML;
+
+        var res=texto1.indexOf("c");
+
+        document.write(" Indice c em: "+res +'</br>')
+
+        var texto2 = "this is ilogical captain!"
+
+        var res2 = texto1.localeCompare(texto2)
+
+        if(res2 == 0){
+            document.write("Strings iguais");
+        }else{
+            document.write("Strings diferentes");
+        }
+
+        var res3 = texto1.slice(4,16)
+        document.write("</br>" + res3)
+
+        
+        var res4 = texto1.split(" ")
+        document.write("</br>" + res4)
+
+        
+        var res5 = texto1.substr(4,10)
+        document.write("</br>" + res5)
+
+        //toLowerCase e toUpperCase
+
+    </script>
+
+</body>
+</html>
